@@ -18,23 +18,18 @@
                             <div class='card'>
                                 <img src='";
                                 echo $songs->album->images[0]->url;
-                                echo "'>
-                                <p class='p-3 s-20'><b>";
+                                echo "'><p><b>";
                                     echo $songs->album->name;
                                     echo "</b><br><p>&nbsp; Artist :";
-                                    echo $songs->album->artists[0]->name;
-                                    echo "</p>";
+                                    echo $songs->album->artists[0]->name."</p>";
                                     echo "<br><p>&nbsp; Release Date : ";
-                                    echo $songs->album->release_date;
-                                    echo "</p>";
+                                    echo $songs->album->release_date."</p>";
                                     echo "<br><p>&nbsp; Available : ";
                                     $count = 0;
                                     foreach($songs->available_markets as $a){
                                         $count++;
                                     }
-                                    echo $count;
-                                    echo "</p>";
-                                echo "</p>";
+                                    echo $count."</p></p>";
                     echo " </div>
                          </div>";
                 }
